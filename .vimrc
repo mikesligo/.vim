@@ -36,7 +36,7 @@ set encoding=utf-8 " Necessary to show Unicode glyphs
 " switch between header/source with F4
 map <F4> :e %:p:s,.h$,.X123X,:s,.cpp$,.h,:s,.X123X$,.cpp,<CR>
 " Alternate esc bind
-map <F12> <C-]>
+map <F9> <C-]>
 " Bind for TagBar
 nmap <F8> :TagbarToggle<CR>
 
