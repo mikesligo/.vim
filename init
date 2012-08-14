@@ -1,4 +1,7 @@
 #!/bin/bash
+# This is not meant to be run, these are just some of the commands to get the .vimrc and the plugins it uses
+# getPlugins.sh will get the plugins after initialisation
+# Otherwise copying and pasting the following should download and set up everything
 cd ~
 mv .vim .vim.bkp
 mv .vimrc .vimrc.bkp
