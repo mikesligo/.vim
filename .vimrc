@@ -1,6 +1,9 @@
 "map ,c :s/^\/\/\\|^--\\|^> \\|^[#"%!;]//<CR>
 
 call pathogen#infect() " call pathogen
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
+
 nnoremap <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
 set showmode
