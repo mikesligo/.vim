@@ -26,17 +26,15 @@
     path = bundle/hybrid
     url = https://github.com/w0ng/vim-hybrid.git
     ignore = dirty
-[submodule "bundle/delimitMate"]
-	path = bundle/delimitMate
-	url = https://github.com/Raimondi/delimitMate.git
-    ignore = dirty
 [submodule "bundle/tagbar"]
-	path = bundle/tagbar
-	url = https://github.com/majutsushi/tagbar.git
+    path = bundle/tagbar
+    url = https://github.com/majutsushi/tagbar.git
     ignore = dirty
 [submodule "bundle/a"]
-	path = bundle/a
-	url = https://github.com/vim-scripts/a.vim.git
+    path = bundle/a
+    url = https://github.com/vim-scripts/a.vim.git
+    ignore = dirty
 [submodule "bundle/taglist"]
-	path = bundle/taglist
-	url = https://github.com/vim-scripts/taglist.vim.git
+    path = bundle/taglist
+    url = https://github.com/vim-scripts/taglist.vim.git
+    ignore = dirty
