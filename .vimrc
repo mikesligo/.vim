@@ -39,6 +39,9 @@ set encoding=utf-8 " Necessary to show Unicode glyphs
 "map <F4> :e %:p:s,.h$,.X123X,:s,.cpp$,.h,:s,.X123X$,.cpp,<CR>
 map <F4> :A<CR>
 
+set nomodeline
+" opens a definition in a new tab
+map <F5> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
 " opens a definition in a vspilt
 map <F6> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>)
 
@@ -64,9 +67,6 @@ endif
 
 cmap w!! w !sudo tee % >/dev/null<CR>:e!<CR><CR>
 
-set nomodeline
-let Tlist_WinWidth = 50
-map <F4> :TlistToggle<cr>
 
 " maps NERDTree to F10
 map <silent> <F10> :NERDTreeToggle<CR>
