@@ -1,9 +1,3 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =7
-let g:netrw_dirhist_1='/home/mike/.vim/bundle/supertab/.git'
-let g:netrw_dirhist_2='/home/mike/.vim/.git'
-let g:netrw_dirhist_3='/home/mike/src/DWL-GridlabD/.svn'
-let g:netrw_dirhist_4='/home/mike/src/gridlab-d-2.3/patches'
-let g:netrw_dirhist_5='/home/mike/tmp'
-let g:netrw_dirhist_6='/home/mike/pirates'
-let g:netrw_dirhist_7='/home/mike/src/gridlab-d/core'
+let g:netrw_dirhist_cnt =1
+let g:netrw_dirhist_1='/home/mike/.vim/.git'

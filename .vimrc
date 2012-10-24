@@ -29,7 +29,6 @@ set encoding=utf-8   " Necessary to show Unicode glyphs
 set nomodeline       " Disable reading the first and last few lines of each file for ex commands, for security reasons
 set noswapfile      " no swap files
 
-
 let Tlist_Ctags_Cmd = "/usr/bin/ctags" " For taglist
 let Tlist_WinWidth = 50 " For Taglist
 let g:tagbar_autofocus = 1 " go to tagbar window automatically
@@ -52,12 +51,10 @@ map <F4> :A<CR>
 map <F5> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
 " opens a definition in a vspilt
 map <F6> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>)
-" Toggle taglist
-map <F7> :TlistToggle<cr>
 " set tagbartoggle
-nmap <F8> :TagbarToggle<CR>
+nmap <F7> :TagbarToggle<CR>
 " go to definition
-map <F9> <C-]> 
+map <F8> <C-]> 
 " maps NERDTree to F10
 map <silent> <F10> :NERDTreeToggle<CR>
 
