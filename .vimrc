@@ -59,6 +59,6 @@ map <F8> <C-]>
 map <silent> <F10> :NERDTreeToggle<CR>
 
 " Settings for screen
-if match($TERM, "screen")!=-1
-    set term=xterm
-endif
+"if match($TERM, "screen")!=-1
+"    set term=xterm
+"endif
