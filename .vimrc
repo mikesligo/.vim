@@ -58,7 +58,4 @@ map <F8> <C-]>
 " maps NERDTree to F10
 map <silent> <F10> :NERDTreeToggle<CR>
 
-" Settings for screen
-"if match($TERM, "screen")!=-1
-"    set term=xterm
-endifimap jj <Esc>
+imap jj <Esc>
