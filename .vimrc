@@ -58,10 +58,6 @@ map <F8> <C-]>
 " maps NERDTree to F10
 map <silent> <F10> :NERDTreeToggle<CR>
 
-" Settings for screen
-if match($TERM, "screen")!=-1
-    set term=xterm
-endif
-
+<<<<<<< HEAD
 imap jj <Esc>
-" tip - remove ctrl-m - :%s/.$//
+>>>>>>> b66c3c155124d6fd84c9365d79dc9be5f08f6e65
