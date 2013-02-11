@@ -38,3 +38,6 @@
     path = bundle/taglist
     url = https://github.com/vim-scripts/taglist.vim.git
     ignore = dirty
+[submodule "bundle/YouCompleteMe"]
+	path = bundle/YouCompleteMe
+	url = https://github.com/Valloric/YouCompleteMe.git

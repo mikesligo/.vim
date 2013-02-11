@@ -58,6 +58,4 @@ map <F8> <C-]>
 " maps NERDTree to F10
 map <silent> <F10> :NERDTreeToggle<CR>
 
-<<<<<<< HEAD
 imap jj <Esc>
->>>>>>> b66c3c155124d6fd84c9365d79dc9be5f08f6e65
