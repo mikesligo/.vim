@@ -62,3 +62,6 @@ map <silent> <F10> :NERDTreeToggle<CR>
 if match($TERM, "screen")!=-1
     set term=xterm
 endif
+
+imap jj <Esc>
+" tip - remove ctrl-m - :%s/.$//
