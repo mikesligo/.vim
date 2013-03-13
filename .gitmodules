@@ -38,3 +38,6 @@
     path = bundle/taglist
     url = https://github.com/vim-scripts/taglist.vim.git
     ignore = dirty
+[submodule "bundle/vim-gitgutter"]
+	path = bundle/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter.git
