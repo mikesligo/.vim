@@ -33,6 +33,8 @@ set mouse=a          " Use mouse to move pointer and select
 let Tlist_Ctags_Cmd = "/usr/bin/ctags" " For taglist
 let Tlist_WinWidth = 50 " For Taglist
 let g:tagbar_autofocus = 1 " go to tagbar window automatically
+let g:flake8_max_line_length=120 " set max line length for pep8
+autocmd BufWritePost *.py call Flake8() " run pep8 when opening any python file
 
 filetype plugin on 
 filetype plugin indent on 
@@ -48,14 +50,16 @@ nnoremap <F2> :set invpaste paste?<CR>
 let g:SuperTabMappingForward = '<F3>'
 " swaps between header and source
 map <F4> :A<CR>
-" opens a definition in a new tab
-map <F5> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
+" Bring up buffers
+nnoremap <F5> :buffers<CR>:buffer<Space>
 " opens a definition in a vspilt
 map <F6> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>)
 " set tagbartoggle
 nmap <F7> :TagbarToggle<CR>
 " go to definition
 map <F8> <C-]> 
+" Map flake8 to f9
+autocmd FileType python map <buffer> <F9> :call Flake8()<CR>
 " maps NERDTree to F10
 map <silent> <F10> :NERDTreeToggle<CR>
 
