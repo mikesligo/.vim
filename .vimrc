@@ -28,7 +28,6 @@ set laststatus=2     " Always show the statusline
 set encoding=utf-8   " Necessary to show Unicode glyphs
 set nomodeline       " Disable reading the first and last few lines of each file for ex commands, for security reasons
 set noswapfile       " no swap files
-set mouse=a          " Use mouse to move pointer and select
 
 let Tlist_Ctags_Cmd = "/usr/bin/ctags" " For taglist
 let Tlist_WinWidth = 50 " For Taglist
