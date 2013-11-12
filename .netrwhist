@@ -1,6 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_cnt =5
 let g:netrw_dirhist_1='/home/mike/.vim/.git'
 let g:netrw_dirhist_2='/home/yo/Vimtorial/code'
 let g:netrw_dirhist_3='/home/yo/Vimtorial'
 let g:netrw_dirhist_4='/home/yo/tmp'
+let g:netrw_dirhist_5='/var/www/tfa'
