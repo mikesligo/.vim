@@ -28,12 +28,12 @@ set laststatus=2     " Always show the statusline
 set encoding=utf-8   " Necessary to show Unicode glyphs
 set nomodeline       " Disable reading the first and last few lines of each file for ex commands, for security reasons
 set noswapfile       " no swap files
+set backspace=indent,eol,start "for some reason backspace wasn't working on debian 7.0, this fixes
 
 let Tlist_Ctags_Cmd = "/usr/bin/ctags" " For taglist
 let Tlist_WinWidth = 50 " For Taglist
 let g:tagbar_autofocus = 1 " go to tagbar window automatically
 let g:flake8_max_line_length=120 " set max line length for pep8
-autocmd BufWritePost *.py call Flake8() " run pep8 when opening any python file
 
 filetype plugin on 
 filetype plugin indent on 
@@ -45,8 +45,8 @@ syntax on
 cmap w!! w !sudo tee % >/dev/null<CR>:e!<CR><CR>
 " Bind f2 to pastetoggle
 nnoremap <F2> :set invpaste paste?<CR>
-" Rebinding supertab to <F3>
-let g:SuperTabMappingForward = '<F3>'
+" Map make to f3
+map <F3> :!make<CR>
 " swaps between header and source
 map <F4> :A<CR>
 " Bring up buffers
@@ -57,9 +57,15 @@ map <F6> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>)
 nmap <F7> :TagbarToggle<CR>
 " go to definition
 map <F8> <C-]> 
-" Map flake8 to f9
-autocmd FileType python map <buffer> <F9> :call Flake8()<CR>
 " maps NERDTree to F10
 map <silent> <F10> :NERDTreeToggle<CR>
+" Pytest
+nmap <silent><Leader>f <Esc>:Pytest file<CR>
+nmap <silent><Leader>c <Esc>:Pytest class<CR>
+nmap <silent><Leader>m <Esc>:Pytest method<CR>
+nmap <silent><Leader>s <Esc>:Pytest session<CR>
 
 imap jj <Esc>
+
+" Rebinding supertab to <F3>
+"let g:SuperTabMappingForward = '<F3>'
