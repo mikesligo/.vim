@@ -1,7 +1,7 @@
 call pathogen#infect() " call pathogen
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
-
+"
 set background=dark
 set hidden           " Make certain buffers hidden
 set pastetoggle=<F2> " Bind pastetoggle to F2
