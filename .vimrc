@@ -34,12 +34,17 @@ let Tlist_Ctags_Cmd = "/usr/bin/ctags" " For taglist
 let Tlist_WinWidth = 50 " For Taglist
 let g:tagbar_autofocus = 1 " go to tagbar window automatically
 let g:flake8_max_line_length=120 " set max line length for pep8
+let NERDTreeIgnore = ['\.pyc$']
 
 filetype plugin on 
 filetype plugin indent on 
 filetype indent on   " Makes indentation different per file, good with html
 filetype on
 syntax on
+
+autocmd FileType lhaskell setlocal formatoptions+=ro 
+
+colorscheme hybrid
 
 " w!! will write as sudo
 cmap w!! w !sudo tee % >/dev/null<CR>:e!<CR><CR>
