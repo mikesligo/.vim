@@ -40,6 +40,7 @@ let NERDTreeIgnore = ['\.pyc$']
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_custom_ignore = 'node_modules\|git'
 let g:ycm_add_preview_to_completeopt = 0
+let g:ctrlp_working_path_mode = 'ra'
 "let g:Powerline_symbols = 'fancy'
 
 filetype plugin on 
