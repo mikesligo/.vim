@@ -56,13 +56,19 @@ cmap w!! w !sudo tee % >/dev/null<CR>:e!<CR><CR>
 nnoremap <F2> :set invpaste paste?<CR>
 nnoremap <F3> :UndotreeToggle<cr> 
 map <F4> :A<CR>
-nnoremap <F5> :buffers<CR>:buffer<Space>
 map <F6> :bNext<CR>
 map <F7> :bprevious<CR>
-nmap <F8> :TagbarToggle<CR>
+nnoremap <F8> :buffers<CR>:buffer<Space>
+nmap <F9> :TagbarToggle<CR>
 map <silent> <F10> :NERDTreeToggle<CR>
 " Pytest
 nmap <silent><Leader>f <Esc>:Pytest file<CR>
+
+"folding
+inoremap <F11> <C-O>za
+nnoremap <F11> za
+onoremap <F11> <C-C>za
+vnoremap <F11> zf
 
 imap jj <Esc>
 
@@ -89,12 +95,13 @@ endif
 " F2 - Set paste
 " F3 - Undo tree toggle
 " F4 - Swap between .h and .c(pp)
-" F5 - Select a buffer
+" F5 - Use with vimlatex
 " F6 - Prev buffer
 " F7 - Next buffer
-" F8 - TagbarToggle
-" F9 - 
+" F8 - Select a buffer
+" F9 - TagbarToggle
 " F10 - NERDTree
+" F11 - Fold
 "
 " w!! - Write with sudo
-" <ALT> f - Pytest file
+" \f - Pytest file
