@@ -29,11 +29,13 @@ set encoding=utf-8   " Necessary to show Unicode glyphs
 set nomodeline       " Disable reading the first and last few lines of each file for ex commands, for security reasons
 set noswapfile       " no swap files
 set backspace=indent,eol,start "for some reason backspace wasn't working on debian 7.0, this fixes
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
 
 let g:tagbar_autofocus = 1 " go to tagbar window automatically
 let g:flake8_max_line_length=120 " set max line length for pep8
 let NERDTreeIgnore = ['\.pyc$']
 let g:ctrlp_map = '<c-p>'
+let g:ctrlp_custom_ignore = 'node_modules\|git'
 "let g:Powerline_symbols = 'fancy' " makes powerline look fancy but needs
 "proper font/terminal support
 
@@ -49,6 +51,7 @@ colorscheme hybrid
 
 cmap w!! w !sudo tee % >/dev/null<CR>:e!<CR><CR>
 nnoremap <F2> :set invpaste paste?<CR>
+nnoremap <F3> :UndotreeToggle<cr> 
 map <F4> :A<CR>
 nnoremap <F5> :buffers<CR>:buffer<Space>
 nmap <F7> :TagbarToggle<CR>
@@ -64,9 +67,9 @@ endif
 
 " Current keybindings:
 " F2 - Set paste
-" F3 - 
+" F3 - Undo tree toggle
 " F4 - Swap between .h and .c(pp)
-" F5 - Display all buffers, type the corresponding number to open
+" F5 - Select a buffer
 " F6 - 
 " F7 - TagbarToggle
 " F8 - 
