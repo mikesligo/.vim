@@ -38,3 +38,6 @@
     path = bundle/taglist
     url = https://github.com/vim-scripts/taglist.vim.git
     ignore = dirty
+[submodule "bundle/undotree"]
+	path = bundle/undotree
+	url = https://github.com/mbbill/undotree.git
