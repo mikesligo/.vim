@@ -30,11 +30,10 @@ set nomodeline       " Disable reading the first and last few lines of each file
 set noswapfile       " no swap files
 set backspace=indent,eol,start "for some reason backspace wasn't working on debian 7.0, this fixes
 
-let Tlist_Ctags_Cmd = "/usr/bin/ctags" " For taglist
-let Tlist_WinWidth = 50 " For Taglist
 let g:tagbar_autofocus = 1 " go to tagbar window automatically
 let g:flake8_max_line_length=120 " set max line length for pep8
 let NERDTreeIgnore = ['\.pyc$']
+let g:ctrlp_map = '<c-p>'
 
 filetype plugin on 
 filetype plugin indent on 
