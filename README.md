@@ -5,6 +5,7 @@ Dependencies
 
 * YouCompletMe requires Vim 7.3.584 with python2 support and requires some compilation tools/dev tools. See [the github](https://github.com/Valloric/YouCompleteMe) for info.
 * Tern for Vim requires node.js and npm installed
+* Powerline requires Python 3.3 or Python 2.7 to work
 
 Installation
 ------------

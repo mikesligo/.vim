@@ -32,14 +32,15 @@ set backspace=indent,eol,start "for some reason backspace wasn't working on debi
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
 set completeopt-=preview " disable preview window in youcompelteme
 
+set rtp+=~/.vim/bundle/powerline/bindings/vim
+
 let g:tagbar_autofocus = 1 " go to tagbar window automatically
 let g:flake8_max_line_length=120 " set max line length for pep8
 let NERDTreeIgnore = ['\.pyc$']
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_custom_ignore = 'node_modules\|git'
 let g:ycm_add_preview_to_completeopt = 0
-let g:airline#extensions#tabline#enabled = 1
-let g:airline_powerline_fonts = 1 " use powerline fancy patched fonts
+"let g:Powerline_symbols = 'fancy'
 
 filetype plugin on 
 filetype plugin indent on 
@@ -72,6 +73,16 @@ endif
 if executable("ag")
     set grepprg=ag\ --nogroup\
     let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+endif
+
+" Make powerline not wait a second before updating, really nice
+if ! has('gui_running') 
+    set ttimeoutlen=10
+    augroup FastEscape
+        autocmd!
+        au InsertEnter * set timeoutlen=0
+        au InsertLeave * set timeoutlen=1000
+    augroup END
 endif
 
 " Current keybindings:
