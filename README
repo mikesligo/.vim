@@ -3,7 +3,7 @@ Personal vim setup. Uses pathogen and git submodules to get and update plugins, 
 dependencies
 ------------
 
-YouCompletMe requires Vim 7.3.584 with python2 support and requires some compilation tools/dev tools. See (https://github.com/Valloric/YouCompleteMe)[the github] for info.
+YouCompletMe requires Vim 7.3.584 with python2 support and requires some compilation tools/dev tools. See [https://github.com/Valloric/YouCompleteMe](the github) for info.
 
 installation
 ------------
