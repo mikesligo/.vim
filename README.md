@@ -30,4 +30,4 @@ There's probably a better way of doing this!
 
  1. Remove references from .gitmodule
  2. Remove references from .git/config
- 3. git rm --cached <path-to-module></path-to-module>
+ 3. git rm -r --cached <path-to-module></path-to-module>
