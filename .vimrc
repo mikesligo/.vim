@@ -73,5 +73,6 @@ nmap <silent><Leader>s <Esc>:Pytest session<CR>
 
 imap jj <Esc>
 
-" Rebinding supertab to <F3>
-"let g:SuperTabMappingForward = '<F3>'
+if version >= 703
+  set cm=blowfish " use Blowfish for encryption, much more secure than the default
+endif
