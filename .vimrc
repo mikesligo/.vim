@@ -30,12 +30,14 @@ set nomodeline       " Disable reading the first and last few lines of each file
 set noswapfile       " no swap files
 set backspace=indent,eol,start "for some reason backspace wasn't working on debian 7.0, this fixes
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
+set completeopt-=preview " disable preview window in youcompelteme
 
 let g:tagbar_autofocus = 1 " go to tagbar window automatically
 let g:flake8_max_line_length=120 " set max line length for pep8
 let NERDTreeIgnore = ['\.pyc$']
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_custom_ignore = 'node_modules\|git'
+let g:ycm_add_preview_to_completeopt = 0
 "let g:Powerline_symbols = 'fancy' " makes powerline look fancy but needs
 "proper font/terminal support
 
