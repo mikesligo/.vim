@@ -55,6 +55,3 @@
 [submodule "bundle/powerline-all"]
 	path = bundle/powerline-all
 	url = https://github.com/Lokaltog/powerline.git
-[submodule "bundle/vim-latex"]
-	path = bundle/vim-latex
-	url = https://github.com/jcf/vim-latex.git
