@@ -67,6 +67,11 @@ if version >= 703
   set cm=blowfish " use Blowfish for encryption, much more secure than the default
 endif
 
+if executable("ag")
+    set grepprg=ag\ --nogroup\
+    let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+endif
+
 " Current keybindings:
 " F2 - Set paste
 " F3 - Undo tree toggle
