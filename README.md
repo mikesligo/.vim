@@ -3,7 +3,7 @@ Personal vim setup. Uses pathogen and git submodules to get and update plugins, 
 dependencies
 ------------
 
-YouCompletMe requires Vim 7.3.584 with python2 support and requires some compilation tools/dev tools. See https://github.com/Valloric/YouCompleteMe for info.
+YouCompletMe requires Vim 7.3.584 with python2 support and requires some compilation tools/dev tools. See [the github](https://github.com/Valloric/YouCompleteMe) for info.
 
 installation
 ------------
@@ -18,12 +18,12 @@ updating
  1. cd ~/.vim
  2. sh updatePlugins.sh
 
-adding packages
+adding plugins
 ---------------
 
  1. git submodule add [link_to_awesomeplugin.git] bundle/awesomeplugin
 
-removing packages
+removing plugins
 -----------------
 
 There's probably a better way of doing this!
