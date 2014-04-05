@@ -1,5 +1,5 @@
+runtime bundle/vim-pathogen/autoload/pathogen.vim
 call pathogen#infect() " call pathogen
-call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 "
 set background=dark
@@ -47,32 +47,31 @@ autocmd FileType lhaskell setlocal formatoptions+=ro
 
 colorscheme hybrid
 
-" w!! will write as sudo
 cmap w!! w !sudo tee % >/dev/null<CR>:e!<CR><CR>
-" Bind f2 to pastetoggle
 nnoremap <F2> :set invpaste paste?<CR>
-" Map make to f3
-map <F3> :!make<CR>
-" swaps between header and source
 map <F4> :A<CR>
-" Bring up buffers
 nnoremap <F5> :buffers<CR>:buffer<Space>
-" opens a definition in a vspilt
-map <F6> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>)
-" set tagbartoggle
 nmap <F7> :TagbarToggle<CR>
-" go to definition
-map <F8> <C-]> 
-" maps NERDTree to F10
 map <silent> <F10> :NERDTreeToggle<CR>
 " Pytest
 nmap <silent><Leader>f <Esc>:Pytest file<CR>
-nmap <silent><Leader>c <Esc>:Pytest class<CR>
-nmap <silent><Leader>m <Esc>:Pytest method<CR>
-nmap <silent><Leader>s <Esc>:Pytest session<CR>
 
 imap jj <Esc>
 
 if version >= 703
   set cm=blowfish " use Blowfish for encryption, much more secure than the default
 endif
+
+" Current keybindings:
+" F2 - Set paste
+" F3 - 
+" F4 - Swap between .h and .c(pp)
+" F5 - Display all buffers, type the corresponding number to open
+" F6 - 
+" F7 - TagbarToggle
+" F8 - 
+" F9 - 
+" F10 - NERDTree
+"
+" w!! - Write with sudo
+" <ALT> f - Pytest file
