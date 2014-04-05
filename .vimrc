@@ -1,7 +1,7 @@
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 call pathogen#infect() " call pathogen
 call pathogen#helptags()
-"
+
 set background=dark
 set hidden           " Make certain buffers hidden
 set pastetoggle=<F2> " Bind pastetoggle to F2
@@ -38,8 +38,8 @@ let NERDTreeIgnore = ['\.pyc$']
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_custom_ignore = 'node_modules\|git'
 let g:ycm_add_preview_to_completeopt = 0
-"let g:Powerline_symbols = 'fancy' " makes powerline look fancy but needs
-"proper font/terminal support
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1 " use powerline fancy patched fonts
 
 filetype plugin on 
 filetype plugin indent on 
@@ -56,7 +56,9 @@ nnoremap <F2> :set invpaste paste?<CR>
 nnoremap <F3> :UndotreeToggle<cr> 
 map <F4> :A<CR>
 nnoremap <F5> :buffers<CR>:buffer<Space>
-nmap <F7> :TagbarToggle<CR>
+map <F6> :bNext<CR>
+map <F7> :bprevious<CR>
+nmap <F8> :TagbarToggle<CR>
 map <silent> <F10> :NERDTreeToggle<CR>
 " Pytest
 nmap <silent><Leader>f <Esc>:Pytest file<CR>
@@ -77,9 +79,9 @@ endif
 " F3 - Undo tree toggle
 " F4 - Swap between .h and .c(pp)
 " F5 - Select a buffer
-" F6 - 
-" F7 - TagbarToggle
-" F8 - 
+" F6 - Prev buffer
+" F7 - Next buffer
+" F8 - TagbarToggle
 " F9 - 
 " F10 - NERDTree
 "
