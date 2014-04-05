@@ -34,6 +34,8 @@ let g:tagbar_autofocus = 1 " go to tagbar window automatically
 let g:flake8_max_line_length=120 " set max line length for pep8
 let NERDTreeIgnore = ['\.pyc$']
 let g:ctrlp_map = '<c-p>'
+"let g:Powerline_symbols = 'fancy' " makes powerline look fancy but needs
+"proper font/terminal support
 
 filetype plugin on 
 filetype plugin indent on 
