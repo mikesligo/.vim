@@ -35,12 +35,12 @@ set completeopt-=preview " disable preview window in youcompelteme
 
 let g:tagbar_autofocus = 1 " go to tagbar window automatically
 let g:flake8_max_line_length=120 " set max line length for pep8
-let NERDTreeIgnore = ['\.pyc$']
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_custom_ignore = 'node_modules\|git'
-let g:ycm_add_preview_to_completeopt = 0
-let g:ctrlp_working_path_mode = 'ra'
-let g:Powerline_symbols = 'fancy'
+let NERDTreeIgnore = ['\.pyc$'] " Ignore files in nerdtreebrowser
+let g:ctrlp_map = '<c-p>' " ctrl p keybinding
+let g:ctrlp_custom_ignore = 'node_modules\|git' " ctrl p ignore dirs
+let g:ycm_add_preview_to_completeopt = 0 " don't show 'extra info' window for ycm
+let g:ctrlp_working_path_mode = 'ra' " ctrl p the root is where the .git is located
+let g:Powerline_symbols = 'fancy' " extra symbols for powerline, might require some font patching
 
 filetype plugin on 
 filetype plugin indent on 
@@ -76,6 +76,7 @@ if version >= 703
   set cm=blowfish " use Blowfish for encryption, much more secure than the default
 endif
 
+" use ag instead of grep, makes ctrlp faster in theory, haven't verified
 if executable("ag")
     set grepprg=ag\ --nogroup\
     let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
@@ -105,3 +106,5 @@ endif
 "
 " w!! - Write with sudo
 " \f - Pytest file
+" ctrl p - ctrlp
+" jj - same as esc
