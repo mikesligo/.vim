@@ -48,7 +48,7 @@ filetype indent on   " Makes indentation different per file, good with html
 filetype on
 syntax on
 
-autocmd FileType lhaskell setlocal formatoptions+=ro 
+autocmd FileType lhaskell setlocal formatoptions+=ro ts=2 sw=2
 
 colorscheme hybrid
 
