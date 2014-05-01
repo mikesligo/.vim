@@ -41,6 +41,7 @@ let g:ctrlp_custom_ignore = 'node_modules\|git' " ctrl p ignore dirs
 let g:ycm_add_preview_to_completeopt = 0 " don't show 'extra info' window for ycm
 let g:ctrlp_working_path_mode = 'ra' " ctrl p the root is where the .git is located
 let g:Powerline_symbols = 'fancy' " extra symbols for powerline, might require some font patching
+let g:ycm_semantic_triggers = {'haskell' : ['.']}
 
 filetype plugin on 
 filetype plugin indent on 
@@ -48,7 +49,7 @@ filetype indent on   " Makes indentation different per file, good with html
 filetype on
 syntax on
 
-autocmd FileType lhaskell setlocal formatoptions+=ro ts=2 sw=2
+autocmd FileType lhaskell setlocal formatoptions+=ro tabstop=2 sw=2
 
 colorscheme hybrid
 
